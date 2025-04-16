@@ -1,0 +1,106 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{pgfplots}
+\usepackage{physics}
+\usepackage{cancel}
+\usepackage{enumitem}
+\usepackage{txfonts}
+\usepackage{mathtools}
+
+\newcommand{\vi}{\vb{\hat i}}
+\newcommand{\vj}{\vb{\hat j}}
+\newcommand{\vk}{\vb{\hat k}}
+
+\pgfplotsset{compat=1.18}
+
+\usepackage[a4paper, top=1cm, bottom=2cm, left=2cm, right=2cm, includehead, includefoot]{geometry}
+
+\begin{document}
+
+\noindent
+Introduction to Mechanics 2$^\text{nd}$ edition  \hfill Kleppner and Kolenkow
+
+\noindent\rule{\textwidth}{0.4pt}
+
+\begin{center}
+    \textbf{\LARGE Vectors and Kinematics} \\
+    \vspace{12pt}
+    \large Aaron W. Tarajos \\
+    \textit{\today}
+\end{center}
+
+\noindent\rule{\textwidth}{0.4pt}
+
+\section*{1.1 Vector algebra 1}
+Given two vectors $\vb A = (2\ \vi -3\ \vj + 7\ \vk)$ and $\vb B = (5\ \vi + \vj + 2\ \vk)$ find:\\
+\textit{(a)} $\vb A + \vb B$;\quad	\textit{(b)} $\vb A - \vb B$;\quad	\textit{(c)} $\vb A \cdot \vb B$;\quad	\textit{(d)} $\vb A \times \vb B$.
+
+\subsection*{solution}
+\textit{(a)}
+\begin{align*}
+	\vb A + \vb B &= (2+5)\ \vi + (-3 + 1)\ \vj + (7+2)\ \vk \\
+	&= 7\ \vi -2\ \vj + 9\ \vk
+\end{align*}
+\textit{(b)}
+\begin{align*}
+	\vb A - \vb B &= (2-5)\ \vi + (-3 - 1)\ \vj + (7-2)\ \vk \\
+	&= -3\ \vi -4\ \vj + 5\ \vk
+\end{align*}
+\textit{(c)}
+\begin{align*}
+	\vb A \cdot \vb B &= (2\cdot 5) + (-3 \cdot 1) + (7 \cdot 2) \\
+	&= 10-3+14 \\
+	&= 21
+\end{align*}
+\textit{(d)}
+\begin{align*}
+	\vb A \times \vb B &=
+\begin{vmatrix}
+	\vi & \vj & \vk \\
+	2 & -3 & 7 \\
+	5 & 1 & 2
+\end{vmatrix}\\
+	&= (-6-7)\ \vi -(4-35)\ \vj + (2+15)\ \vk \\
+	&= -13\ \vi + 31\ \vj + 17\ \vk
+\end{align*}
+	
+\section*{1.2 Vector algebra 2}
+Given two vectors $\vb A = (3\ \vi - 2\ \vj + 5\ \vk)$ and $\vb B = (6\ \vi - 7\ \vj + 4\ \vk)$ find:\\
+\textit{(a)} $\vb A^2$;\quad \textit{(b)} $\vb B^2$;\quad \textit(c) $(\vb A \cdot \vb B)^2$.
+
+\section*{1.3 Cosine and sine by vector algebra}
+Find the cosine and sine of the angle between $\vb A = (3\ \vi + \vj + \vk)$ and $\vb B = (-2\ \vi + \vj + \vk)$.
+
+\section*{1.4 Direction cosines}
+The direction cosines of a vector are the cosines of the angles it
+makes with the coordinate axes. The cosines of the angles between
+the vector and the $x$, $y$, and $z$ axes are usually called, in turn, $\alpha$, $\beta$,
+and $\gamma$. Prove that $\alpha^2 + \beta^2 + \gamma^2 = 1$, using either geometry or vector
+algebra.
+
+\section*{1.5 Perpendicular vectors}
+Show that if $|\vb A - \vb B| = |\vb A + \vb B|$, then $\vb A$ and $\vb B$ are perpendicular.
+
+\section*{1.6 Diagonals of a parallelogram}
+Show that the diagonals of an equilateral parallelogram are
+perpendicular.
+
+\section*{1.7 Law of sines}
+Prove the law of sines using the corss product. It should only take a couple of lines.
+
+\section*{1.8 Vector proof of a trigonometric identity}
+Let $\vb{\hat a}$ and $\vb{\hat b}$ be unit vectors in the $x$-$y$ plane making angles $\theta$ and $\phi$ with the $x$ axis, respectively. Show that $\vb{\hat a} = \cos \theta\ \vi + \sin \theta\ \vj$, $\vb{\hat b} = \cos \phi\ \vi + \sin \phi\ \vj$, and using vector algebra prove that
+\[
+	\cos(\theta-\phi) = \cos \theta \cos \phi + \sin \theta \sin \phi\ .
+\] 
+
+\section*{1.9 Perpendicular unit vector}
+Find a unit vector perpendicular to $\vb A = (\vi + \vj - \vk)$ and $\vb B = (2\ \vi + \vj - 3\ \vk)$.
+
+\section*{1.10 Perpendicular unit vectors}
+Given vector $\vb A = 3\ \vi + 4\ \vj - 4\ \vk$, \\
+\textit{(a)} find a unit vector $\vb{\hat B}$ that lies in the $x$-$y$ plane and is perpendicular to $\vb A$.\\
+\textit{(b)} find a unit vector $\vb{\hat C}$ that is perpendicular to both $\vb A$ and $\vb{\hat B}$. \\
+\textit{(c)} Show that $\vb A$ is perpendicular to the plane defined by $\vb{\hat B}$ and $\vb{\hat C}$.
+\end{document}
